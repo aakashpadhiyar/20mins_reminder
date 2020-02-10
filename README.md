@@ -3,42 +3,42 @@
 
 ## Startup script on startup 
 
-			$ sudo nano /etc/systemd/system/startup.service
+		$ sudo nano /etc/systemd/system/startup.service
 
-			  [Unit]
-			  Description=Startup
+		  [Unit]
+		  Description=Startup
 
-			  [Service]
-			  ExecStart=/usr/local/bin/startup.sh
+		  [Service]
+		  ExecStart=/usr/local/bin/startup.sh
 
-			  [Install]
-			  WantedBy=default.target
+		  [Install]
+		  WantedBy=default.target
 
 
-				$ sudo nano /usr/local/bin/startup.sh
+		$ sudo nano /usr/local/bin/startup.sh
 
-				  #!/bin/bash
+		  #!/bin/bash
 
-				  date > /root/report.txt
-				  du -sh /home/ >> /root/report.txt
-				 
-				$ sudo chmod 744 /usr/local/bin/startup.sh
-				$ sudo chmod 664 /etc/systemd/system/startup.service
-				$ systemctl daemon-reload
-				$ systemctl enable startup.service
+		  date > /root/report.txt
+		  du -sh /home/ >> /root/report.txt
 
-				# Test the script
-				$ systemctl start startup.service
-				$ cat /root/report.txt
+		$ sudo chmod 744 /usr/local/bin/startup.sh
+		$ sudo chmod 664 /etc/systemd/system/startup.service
+		$ systemctl daemon-reload
+		$ systemctl enable startup.service
 
-				# Reboot
-				$ sudo reboot
+		# Test the script
+		$ systemctl start startup.service
+		$ cat /root/report.txt
 
-				# Change password for user ubuntu
-				$ sudo passwd ubuntu
+		# Reboot
+		$ sudo reboot
+
+		# Change password for user ubuntu
+		$ sudo passwd ubuntu
 
 ## SCRIPT
-			./the202020
+		./the202020
 
 			
 # In every 20mins this file play a ringtone to alert you
