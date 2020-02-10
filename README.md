@@ -64,4 +64,4 @@ Alternately, a person can benefit from closing their eyes for 20 seconds every 2
 
 Anyone who spends the day sitting should periodically get up and walk around, to prevent back and neck pains.
 
-    https://www.medicalnewstoday.com/articles/321536.php
+https://www.medicalnewstoday.com/articles/321536.php
