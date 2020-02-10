@@ -9,8 +9,7 @@
 		  Description=Startup
 
 		  [Service]
-		  ExecStart=/usr/local/bin/startup.sh
-
+		  ExecStart=/usr/local/bin/the2020
 		  [Install]
 		  WantedBy=default.target
 
